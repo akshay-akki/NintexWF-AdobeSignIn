@@ -1,0 +1,16 @@
+﻿
+<NintexWorkflowActivity>
+	<Name>Send List Item for signing</Name>
+	<Category>Materialise</Category>
+	<Description>Uploads the list item to Adobe for signing and assigns esingers</Description>
+	<ActivityType>Akki.NintexAdobeSign.UploadItemToSignActivity</ActivityType>
+	<ActivityAssembly>Akki.NintexAdobeSign, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f46d01208e388925</ActivityAssembly>
+	<AdapterType>Akki.NintexAdobeSign.UploadItemToSignAdapter</AdapterType>
+	<AdapterAssembly>Akki.NintexAdobeSign, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f46d01208e388925</AdapterAssembly>
+	<HandlerUrl>ActivityServer.ashx</HandlerUrl>
+  <Icon>/_layouts/NintexWorkflow/CustomActions/Akki.NintexAdobeSign/Images/B49.png</Icon>
+  <ToolboxIcon>/_layouts/NintexWorkflow/CustomActions/Akki.NintexAdobeSign/Images/B30.png</ToolboxIcon>
+  <ConfigurationDialogUrl>CustomActions/Akki.NintexAdobeSign/UploadItemToSign.aspx</ConfigurationDialogUrl>
+	<ShowInCommonActions>yes</ShowInCommonActions>
+	<DocumentLibrariesOnly>no</DocumentLibrariesOnly>
+</NintexWorkflowActivity>

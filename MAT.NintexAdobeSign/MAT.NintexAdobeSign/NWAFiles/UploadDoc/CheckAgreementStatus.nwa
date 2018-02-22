@@ -1,0 +1,31 @@
+﻿<!-- Akki.NintexAdobeSign.nwa
+
+    Nintex Workflow 2013 action definition (.nwa) file
+
+    This XML file provides the metadata needed by Nintex Workflow 2013 to register the 
+    workflow action and ensure that the workflow action is linked to the SharePoint 
+    workflow activity wrapped by the workflow action adapter.
+
+    For more information about the elements contained in this file, see the 
+    Nintex Workflow 2013 Software Development Kit documentation.
+
+    Copyright (c) 2015 – Nintex UK Ltd. All Rights Reserved.  
+    This code released under the terms of the 
+    Microsoft Reciprocal License (MS-RL, http://opensource.org/licenses/MS-RL.html.)
+
+-->
+<NintexWorkflowActivity>
+	<Name>Check Agreement Status</Name>
+	<Category>Materialise</Category>
+	<Description>Checks the current status of the Agreement (document) previosuly sent to Adobe for signture</Description>
+	<ActivityType>Akki.NintexAdobeSign.CheckAgreementStatusActivity</ActivityType>
+	<ActivityAssembly>Akki.NintexAdobeSign, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f46d01208e388925</ActivityAssembly>
+	<AdapterType>Akki.NintexAdobeSign.CheckAgreementStatusAdapter</AdapterType>
+	<AdapterAssembly>Akki.NintexAdobeSign, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f46d01208e388925</AdapterAssembly>
+	<HandlerUrl>ActivityServer.ashx</HandlerUrl>
+  <Icon>/_layouts/NintexWorkflow/CustomActions/Akki.NintexAdobeSign/Images/B49.png</Icon>
+  <ToolboxIcon>/_layouts/NintexWorkflow/CustomActions/Akki.NintexAdobeSign/Images/B30.png</ToolboxIcon>
+  <ConfigurationDialogUrl>CustomActions/Akki.NintexAdobeSign/CheckAgreementStatus.aspx</ConfigurationDialogUrl>
+	<ShowInCommonActions>yes</ShowInCommonActions>
+	<DocumentLibrariesOnly>no</DocumentLibrariesOnly>
+</NintexWorkflowActivity>

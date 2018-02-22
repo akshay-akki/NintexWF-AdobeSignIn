@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="cbec2746-bef4-4750-96dc-91aab33ab54f" solutionId="c916dc75-339c-4be1-b74b-861ac6d7dd2d" resetWebServer="false" sharePointProductVersion="15.0" name="Akki.NintexAdobeSign" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <projectOutputAssembly location="Akki.AdobeSign.Common.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\Matsp.AdobeSign.Common\Matsp.AdobeSign.Common\Akki.AdobeSign.Common.csproj" />
+  </assemblies>
+  <features>
+    <featureReference itemId="76e3fab9-3578-4ac2-947f-a5f8cfc13429" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="04273568-8813-4c78-bf6b-452e11c7b7a3" />
+    <projectItemReference itemId="2a07e6db-0941-476b-a66e-9a1b2bbd057d" />
+  </projectItems>
+</package>

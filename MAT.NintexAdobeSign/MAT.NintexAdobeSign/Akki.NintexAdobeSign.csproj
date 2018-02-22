@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EFBB6E8F-9FEC-4670-8381-D87C0D04BDB4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Akki.NintexAdobeSign</RootNamespace>
+    <AssemblyName>Akki.NintexAdobeSign</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+    <TokenReplacementFileExtensions>nwa</TokenReplacementFileExtensions>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>akki.nintexAdobeSign.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="microsoft.sharepoint.WorkflowActions, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="Nintex.Workflow, Version=1.0.0.0, Culture=neutral, PublicKeyToken=913f6bae0ca5ae12, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\Nintex.Workflow\v4.0_1.0.0.0__913f6bae0ca5ae12\Nintex.Workflow.dll</HintPath>
+    </Reference>
+    <Reference Include="Nintex.Workflow.ApplicationPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=913f6bae0ca5ae12, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\Nintex.Workflow.ApplicationPages\v4.0_1.0.0.0__913f6bae0ca5ae12\Nintex.Workflow.ApplicationPages.dll</HintPath>
+    </Reference>
+    <Reference Include="Nintex.Workflow.ServerControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=913f6bae0ca5ae12, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\Nintex.Workflow.ServerControls\v4.0_1.0.0.0__913f6bae0ca5ae12\Nintex.Workflow.ServerControls.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Workflow.Activities" />
+    <Reference Include="System.Workflow.ComponentModel" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Code\Activities\SendDocForAuthoringActivity.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Code\Activities\UploadItemToSignActivity.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Code\Activities\CheckAgreementStatusActivity.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Code\Activities\DownloadDocumentActivity.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Code\Activities\UploadActivity.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Code\Adapters\CheckAgreementStatusAdapter.cs" />
+    <Compile Include="Code\Adapters\DownloadDocumentAdapter.cs" />
+    <Compile Include="Code\Adapters\SendDocForAuthoringAdapter.cs" />
+    <Compile Include="Code\Adapters\UploadItemToSignAdapter.cs" />
+    <Compile Include="Code\Constants.cs" />
+    <Compile Include="Code\Utilities.cs" />
+    <Compile Include="Features\AkkiAdobeEsign\AkkiAdobeEsign.EventReceiver.cs">
+      <DependentUpon>AkkiAdobeEsign.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\NintexWorkflow\CustomActions\MATSP.NintexAdobeSign\SendDocForAuthoring.aspx.cs">
+      <DependentUpon>SendDocForAuthoring.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\NintexWorkflow\CustomActions\MATSP.NintexAdobeSign\UploadItemToSign.aspx.cs">
+      <DependentUpon>UploadItemToSign.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\NintexWorkflow\CustomActions\MATSP.NintexAdobeSign\DownloadDocument.aspx.cs">
+      <DependentUpon>DownloadDocument.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\NintexWorkflow\CustomActions\MATSP.NintexAdobeSign\CheckAgreementStatus.aspx.cs">
+      <DependentUpon>CheckAgreementStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\NintexWorkflow\CustomActions\MATSP.NintexAdobeSign\MatSP.NintexAdobeSignDialog.aspx.cs">
+      <DependentUpon>MatSP.NintexAdobeSignDialog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Code\Adapters\MatSP.NintexAdobeSignAdapter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Features\AkkiAdobeEsign\AkkiAdobeEsign.feature">
+      <FeatureId>{76e3fab9-3578-4ac2-947f-a5f8cfc13429}</FeatureId>
+    </None>
+    <None Include="Images\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2a07e6db-0941-476b-a66e-9a1b2bbd057d}</SharePointProjectItemId>
+    </None>
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{04273568-8813-4c78-bf6b-452e11c7b7a3}</SharePointProjectItemId>
+    </None>
+    <None Include="akki.nintexAdobeSign.snk" />
+    <None Include="NWAFiles\UploadDoc\SendDocForAuthoring.nwa">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="NWAFiles\UploadDoc\UploadItemToSign.nwa">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="NWAFiles\UploadDoc\DownloadDocument.nwa">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="NWAFiles\UploadDoc\CheckAgreementStatus.nwa">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="NWAFiles\UploadDoc\Akki.NintexAdobeSign.nwa">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="NWAFiles\UploadDoc\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a2c150a6-1b5d-4e99-82db-a9950116543f}</SharePointProjectItemId>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{cbec2746-bef4-4750-96dc-91aab33ab54f}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="FYIClasses\WF ParseXml.nwf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Features\AkkiAdobeEsign\AkkiAdobeEsign.Template.xml">
+      <DependentUpon>AkkiAdobeEsign.feature</DependentUpon>
+    </Content>
+    <Content Include="FYIClasses\Sample Serialised Events.txt" />
+    <Content Include="Images\MAT.NintexAdobeSign\b30.png" />
+    <Content Include="Images\MAT.NintexAdobeSign\b49.png" />
+    <Content Include="Layouts\NintexWorkflow\CustomActions\MATSP.NintexAdobeSign\SendDocForAuthoring.aspx" />
+    <Content Include="Layouts\NintexWorkflow\CustomActions\MATSP.NintexAdobeSign\UploadItemToSign.aspx" />
+    <Content Include="Layouts\NintexWorkflow\CustomActions\MATSP.NintexAdobeSign\DownloadDocument.aspx" />
+    <Content Include="Layouts\NintexWorkflow\CustomActions\MATSP.NintexAdobeSign\Images\b30.png" />
+    <Content Include="Layouts\NintexWorkflow\CustomActions\MATSP.NintexAdobeSign\Images\b49.png" />
+    <Content Include="Layouts\NintexWorkflow\CustomActions\MATSP.NintexAdobeSign\CheckAgreementStatus.aspx" />
+    <Content Include="Layouts\NintexWorkflow\CustomActions\MATSP.NintexAdobeSign\MatSP.NintexAdobeSignDialog.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Matsp.AdobeSign.Common\Matsp.AdobeSign.Common\Akki.AdobeSign.Common.csproj">
+      <Project>{cabc9618-fc5f-43de-9d91-72d5c266c30a}</Project>
+      <Name>Akki.AdobeSign.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

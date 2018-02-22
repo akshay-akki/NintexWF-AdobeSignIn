@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ArrayOfDocumentHistoryEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <DocumentHistoryEvent>
+      <actingUserEmail>punjabimundaaa@gmail.com</actingUserEmail>
+      <actingUserIpAddress>81.246.42.2</actingUserIpAddress>
+      <date>2017-12-11T08:48:50-08:00</date>
+      <description>Document created by akshay koul</description>
+      <participantEmail>punjabimundaaa@gmail.com</participantEmail>
+      <type>CREATED</type>
+      <versionId>3AAABLblqZhA7eDTuNyfwyZQzk5Clu94ypVF1Pf-F-oa-g2PlovAWs9P1j771ADpc8fhh20WsF9s0A-0RAU_kxna0QZQmr399</versionId>
+   </DocumentHistoryEvent>
+   <DocumentHistoryEvent>
+      <actingUserEmail>punjabimundaaa@gmail.com</actingUserEmail>
+      <date>2017-12-11T08:48:55-08:00</date>
+      <description>Sent out for signature to TestPerf5 2</description>
+      <participantEmail>testperf5@materialise.be</participantEmail>
+      <type>SIGNATURE_REQUESTED</type>
+   </DocumentHistoryEvent>
+   <DocumentHistoryEvent>
+      <actingUserEmail>punjabimundaaa@gmail.com</actingUserEmail>
+      <date>2017-12-11T08:48:55-08:00</date>
+      <description>Sent out for signature to testperf5@materialise.be</description>
+      <participantEmail>testperf5@materialise.be(1)</participantEmail>
+      <type>SIGNATURE_REQUESTED</type>
+   </DocumentHistoryEvent>
+   <DocumentHistoryEvent>
+      <actingUserEmail>punjabimundaaa@gmail.com</actingUserEmail>
+      <date>2017-12-11T08:48:55-08:00</date>
+      <description>Sent out for signature to testperf5@materialise.be</description>
+      <participantEmail>testperf5@materialise.be(2)</participantEmail>
+      <type>SIGNATURE_REQUESTED</type>
+   </DocumentHistoryEvent>
+   <DocumentHistoryEvent>
+      <actingUserEmail>testperf5@materialise.be</actingUserEmail>
+      <actingUserIpAddress>81.246.42.2</actingUserIpAddress>
+      <date>2017-12-11T08:49:19-08:00</date>
+      <description>Document viewed by TestPerf5 2</description>
+      <participantEmail>testperf5@materialise.be</participantEmail>
+      <type>EMAIL_VIEWED</type>
+   </DocumentHistoryEvent>
+   <DocumentHistoryEvent>
+      <actingUserEmail>testperf5@materialise.be</actingUserEmail>
+      <actingUserIpAddress>81.246.42.2</actingUserIpAddress>
+      <date>2017-12-11T08:49:45-08:00</date>
+      <description>Document e-signed by TestPerf5 2</description>
+      <participantEmail>testperf5@materialise.be</participantEmail>
+      <type>ESIGNED</type>
+      <versionId>3AAABLblqZhA8Jn-Sqj9sWRuoYxdkK1kB7ZuBAIOEYDAECECILd_Oc_2vgnN4nRYnmmTnd-Dml47R1z8X_hyAjLdysASxCdWE</versionId>
+      <comment>esignVersion: 0.9.0.113255, User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36</comment>
+   </DocumentHistoryEvent>
+   <DocumentHistoryEvent>
+      <actingUserEmail>testperf5@materialise.be(1)</actingUserEmail>
+      <actingUserIpAddress>81.246.42.2</actingUserIpAddress>
+      <date>2017-12-11T08:49:51-08:00</date>
+      <description>Document viewed by testperf5@materialise.be</description>
+      <participantEmail>testperf5@materialise.be(1)</participantEmail>
+      <type>EMAIL_VIEWED</type>
+   </DocumentHistoryEvent>
+   <DocumentHistoryEvent>
+      <actingUserEmail>testperf5@materialise.be(1)</actingUserEmail>
+      <actingUserIpAddress>81.246.42.2</actingUserIpAddress>
+      <date>2017-12-11T08:50:02-08:00</date>
+      <description>Document e-signed by testperf5@materialise.be</description>
+      <participantEmail>testperf5@materialise.be(1)</participantEmail>
+      <type>ESIGNED</type>
+      <versionId>3AAABLblqZhDXU7TV89rNvOPjVkrkg5QqzjL64rNINzGk0jeZehn4LVCmNsCEUDl9mB5g1keiBO_JAykr1-NO6-bkKFQf73Xc</versionId>
+      <comment>esignVersion: 0.9.0.113255, User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36</comment>
+   </DocumentHistoryEvent>
+   <DocumentHistoryEvent>
+      <actingUserEmail>testperf5@materialise.be(2)</actingUserEmail>
+      <actingUserIpAddress>81.246.42.2</actingUserIpAddress>
+      <date>2017-12-11T08:54:55-08:00</date>
+      <description>Document viewed by testperf5@materialise.be</description>
+      <participantEmail>testperf5@materialise.be(2)</participantEmail>
+      <type>EMAIL_VIEWED</type>
+   </DocumentHistoryEvent>
