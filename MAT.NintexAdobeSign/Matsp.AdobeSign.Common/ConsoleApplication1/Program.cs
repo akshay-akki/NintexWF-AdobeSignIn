@@ -25,7 +25,8 @@ namespace ConsoleApplication1
              Utilities.GetUserEmails("testperf5@materialise.be,i:0#.w|testsharepoint\\testperf5;CAPA Owners;tht s", "http://leumtstspapp1/sites/staff/quality/capa/");
             
             // UploadMultipleDocs();
-            // UploadListItem();
+            // UploadListItem();  
+
 
 
             //string s =  GetSerialisedString("3AAABLblqZhCMa3FBIxX6F_aQsyi-KcY_eVYAgYHJFEmzy-_Et8vPIEyLCgRJLiVzCUw_K8lpRxH51zfEHTmVYk2ZqR98ushf");
