@@ -16,7 +16,7 @@
 -->
 <NintexWorkflowActivity>
 	<Name>Check Agreement Status</Name>
-	<Category>Materialise</Category>
+	<Category>Akki</Category>
 	<Description>Checks the current status of the Agreement (document) previosuly sent to Adobe for signture</Description>
 	<ActivityType>Akki.NintexAdobeSign.CheckAgreementStatusActivity</ActivityType>
 	<ActivityAssembly>Akki.NintexAdobeSign, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f46d01208e388925</ActivityAssembly>

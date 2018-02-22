@@ -1,7 +1,7 @@
 ﻿
 <NintexWorkflowActivity>
 	<Name>Send List Item for signing</Name>
-	<Category>Materialise</Category>
+	<Category>Akki</Category>
 	<Description>Uploads the list item to Adobe for signing and assigns esingers</Description>
 	<ActivityType>Akki.NintexAdobeSign.UploadItemToSignActivity</ActivityType>
 	<ActivityAssembly>Akki.NintexAdobeSign, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f46d01208e388925</ActivityAssembly>

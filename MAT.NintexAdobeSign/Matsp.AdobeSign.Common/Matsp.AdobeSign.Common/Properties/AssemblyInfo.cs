@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Akki.AdobeSign.Common")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Materialise")]
+[assembly: AssemblyCompany("Akki")]
 [assembly: AssemblyProduct("Akki.AdobeSign.Common")]
-[assembly: AssemblyCopyright("Copyright © Materialise 2017")]
+[assembly: AssemblyCopyright("Copyright © Akki 2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

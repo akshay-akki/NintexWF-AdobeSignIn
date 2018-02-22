@@ -8,7 +8,7 @@ namespace Akki.NintexAdobeSign
 {
   internal class Constants
     {
-        internal const string PathToNWA = "template\\features\\Akki.NintexAdobeSign_MatAdobeEsign\\UploadDoc\\";
+        internal const string PathToNWA = "template\\features\\Akki.NintexAdobeSign_AkkiAdobeEsign\\UploadDoc\\";
         internal const int    SharePointVersion = 15;
         internal const string AdapterType = "Akki.NintexAdobeSign.NintexAdobeSignAdapter";
         internal const string Assembly = "Akki.NintexAdobeSign, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f46d01208e388925";

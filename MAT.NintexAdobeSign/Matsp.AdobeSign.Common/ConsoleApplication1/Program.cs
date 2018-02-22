@@ -22,7 +22,7 @@ namespace ConsoleApplication1
         static void Main(string[] args)
         {
 
-             Utilities.GetUserEmails("testperf5@materialise.be,i:0#.w|testsharepoint\\testperf5;CAPA Owners;tht s", "http://leumtstspapp1/sites/staff/quality/capa/");
+             Utilities.GetUserEmails("test5@Akki.be,i:0#.w|testsharepoint\\test5;Akshay Owners;that is", "http://akshay/sites/test/");
             
             // UploadMultipleDocs();
             // UploadListItem();  
@@ -37,16 +37,11 @@ namespace ConsoleApplication1
             //string claim = "testsharepoint\testperf5";
             //SPClaimProviderManager mgr = SPClaimProviderManager.Local;
             //var userName = mgr.DecodeClaim(claim).Value;
-
-
-
-
-
-
+            
             //UploadListItem();
             //GetUser();
 
-            //using ( SPSite site = new SPSite("http://leumtstspapp1/sites/staff/HR/"))
+            //using ( SPSite site = new SPSite("http://akshay/sites/HR/"))
             //{
             //    using (SPWeb spWb = site.OpenWeb())
             //    {
@@ -88,7 +83,7 @@ namespace ConsoleApplication1
                 SPWeb spWeb = spSite.OpenWeb();
                 SPList spList = spWeb.Lists["testWf"];
                 SPListItem spItm = spList.Items[0];
-                string[] arrApp = new string[]{"testperf5@materialise.be"};
+                string[] arrApp = new string[]{"testrf5@Akki.be"};
                 SPView listView = spList.Views["MAT_ADOBE_SIGN_VIEW"];
                 if (listView == null)
                     throw new ApplicationException("The list does not contain the view by name  MAT_ADOBE_SIGN_VIEW");
@@ -140,13 +135,13 @@ namespace ConsoleApplication1
             //string appNames = string.Join(";", linqPendingApproval);
             //int f = 23;
 
-            //using (SPSite spSite = new SPSite("http://leumtstspapp1/sites/staff/HR/"))
+            //using (SPSite spSite = new SPSite("http://akshay/sites/HR/"))
             //{
             //    SPWeb spWeb = spSite.OpenWeb();
             //    SPList spList = spWeb.Lists["adobeTestDoc"];
             //    SPListItem spItm = spList.Items[0];
-            //    string[] arr = new string[]{"testperf5@materialise.be","testperf1@materialise.be"};
-            //  //  string[] arr = new string[] { "testperf5@materialise.be"};
+            //    string[] arr = new string[]{"testperf5@Akki.be","testperf1@Akki.be"};
+            //  //  string[] arr = new string[] { "testperf5@Akki.be"};
             //    // var v = AdobeOperations.SendDocumentByBytesForSigninig(spItm.File.OpenBinary(), "ConsoleApp", arr);
 
             //    AgreementInfo a = AdobeOperations.GetAgreementStatus("3AAABLblqZhCbjKCWp581rjZ2UaDOJB7WZLJaCzIoElADXeIaG3PIeJXCg4d3N9QLLT0Sz3dOMzKvcqqn-WQKj2TSE3kVYnll");
@@ -170,10 +165,10 @@ namespace ConsoleApplication1
 
         public static string RunV()
         {
-            string intKey = "3AAABLblqZhCJbhJb-AMG0scMN6gmef-dWM6gnGd3DQZcscF_YHPGIBOW9GaeJhaSHtoLqxASbGV1_Om8KXLC2acIZ1PwatLJ";
+            string intKey = "3AlqZhCJbhJb-AMG0scMN6gmef-dWM6gnGd3DQZcscF_YHPGIBOW9GaeJhaSHtoLqxASbGV1_Om8KXLC2acIZ1PwatLJ";
             var client = "https://api.eu1.echosign.com/api/rest/v5";
 
-            string[] arr = new string[] { "testperf5@materialise.be", "testperf1@materialise.be" };
+            string[] arr = new string[] { "tperf5@Akki.be", "tperf1@Akki.be" };
             var v = AdobeOperations.SendDocumentForAgreemntByFilePath(@"E:\backup\TestingAkkiDoc.docx",null, "agg", arr,null,null).Result;
             var ss = v.agreementId;
             return ss;
@@ -191,7 +186,7 @@ namespace ConsoleApplication1
             arrByte.Add(System.IO.File.ReadAllBytes(file1));
             arrByte.Add(System.IO.File.ReadAllBytes(file2));
 
-            string[] arr1 = new string[] { "testperf5@materialise.be" };
+            string[] arr1 = new string[] { "tesrf5@Akki.be" };
 
             var agreementId = AdobeOperations.SendDocumentByBytesForSigninig(Mainfile, arrByte, "Test Multiple Docs", arr1, null, null).agreementId;
             return agreementId;

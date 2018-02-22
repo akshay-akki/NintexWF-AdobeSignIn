@@ -16,7 +16,7 @@
 -->
 <NintexWorkflowActivity>
 	<Name>Send Document For Esign to Adobe</Name>
-	<Category>Materialise</Category>
+	<Category>Akki</Category>
 	<Description>Uploads Document For Esign to Adobe and assign esigners</Description>
 	<ActivityType>Akki.NintexAdobeSign.UploadActivity</ActivityType>
 	<ActivityAssembly>Akki.NintexAdobeSign, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f46d01208e388925</ActivityAssembly>
